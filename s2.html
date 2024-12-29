@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTracker - Mood History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .button.primary {
+            background-color: #6c63ff;
+            color: #ffffff;
+        }
+
+        .button.secondary {
+            background-color: #f1f1f1;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .legend span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend span::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .legend .happy::before {
+            background-color: blue;
+        }
+
+        .legend .sad::before {
+            background-color: red;
+        }
+
+        .legend .neutral::before {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">MoodTracker</div>
+    </div>
+
+    <div class="container">
+        <div class="section-title">Mood History</div>
+
+        <div class="button-group">
+            <button class="button primary">12 month</button>
+            <button class="button secondary">30 days</button>
+        </div>
+
+        <div class="chart-container">
+            <!-- Placeholder for the chart -->
+            <img src="https://support.lifecraft.com/hc/article_attachments/4404804980887/LineChart.png" alt="Mood History Chart" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+
+        <div class="legend">
+            <span class="happy">Happy</span>
+            <span class="sad">Sad</span>
+            <span class="neutral">Neutral</span>
+        </div>
+
+        <div class="button-group" style="justify-content: flex-end;">
+            <button class="button secondary">Filter</button>
+            <button class="button secondary">Export</button>
+        </div>
+    </div>
+</body>
+</html>

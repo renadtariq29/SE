@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressSync Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .menu a {
+            text-decoration: none;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .navbar .menu a.active {
+            color: #6c63ff;
+            border-bottom: 2px solid #6c63ff;
+        }
+
+        .navbar .actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .navbar .actions img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .overall-progress {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .progress-card {
+            flex: 1;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .progress-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .progress-card p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .key-metrics {
+            margin-top: 40px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .metric-card {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-card h3 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .metric-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6c63ff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #5548c8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">ProgressSync</div>
+        <div class="menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Award</a>
+            <a href="#">Courses</a>
+            <a href="#">Events</a>
+            <a href="#">Shop</a>
+        </div>
+        <div class="actions">
+            <a href="#">Detailed Report</a>
+            <img src="https://via.placeholder.com/35" alt="User Profile">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-title">Overall Progress</div>
+        <div class="overall-progress">
+            <div class="progress-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBygngDiciQHK7vGuPK_WSCv0IDUQRs9kZg&s" alt="Happy" width="90" height="90">
+                <p><strong>Happy</strong></p>
+                <p>70% of users feel happy.</p>
+            </div>
+            <div class="progress-card">
+                <img src="https://www.shutterstock.com/image-photo/photo-portrait-calm-pretty-girl-260nw-1847880169.jpg" alt="Neutral" width="90" height="90">
+                <p><strong>Neutral</strong></p>
+                <p>20% of users feel neutral.</p>
+            </div>
+            <div class="progress-card">
+                <img src="https://thumbs.dreamstime.com/b/robot-face-icon-sad-face-dissappointed-emotion-robotic-emoji-vector-illustration-96192699.jpg" alt="Sad" width="90" height="90">
+                <p><strong>Sad</strong></p>
+                <p>10% of users feel sad.</p>
+            </div>
+        </div>
+
+        <div class="key-metrics">
+            <div class="section-title">Key Metrics</div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>45</h3>
+                    <p>Average Engagement Time</p>
+                    <p><span style="color: green;">&#9650; 75%</span></p>
+                </div>
+                <div class="metric-card">
+                    <h3>30</h3>
+                    <p>Course Completion Rate</p>
+                    <p><span style="color: red;">&#9660; 60%</span></p>
+                </div>
+            </div>
+            <a href="#" class="button">View Detailed Report</a>
+        </div>
+    </div>
+
+</body>
+</html>
+

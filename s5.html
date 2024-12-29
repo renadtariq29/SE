@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheraTrack - Therapist View</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .logo span {
+            color: #6c63ff;
+            margin-right: 5px;
+        }
+
+        .search-bar {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icons i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .patient-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .patient-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .patient-card h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .patient-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .patient-card button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #fff;
+            color: #6c63ff;
+            border: 1px solid #6c63ff;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .patient-card button:hover {
+            background-color: #6c63ff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>💬</span> TheraTrack
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+            <i>📅</i>
+            <i>🔔</i>
+        </div>
+    </header>
+    <main>
+        <h1>Patient List</h1>
+        <div class="patient-grid">
+            <div class="patient-card">
+                <h3>Rabia Tahir</h3>
+                <p>Mood: Happy</p>
+                <p>CBT: 85% done</p>
+                <button>View Detailed Report</button>
+            </div>
+            <div class="patient-card">
+                <h3>Renaid Tariq</h3>
+                <p>Mood: Happy</p>
+                <p>CBT: 90% done</p>
+                <button>View Detailed Report</button>
+            </div>
+            <div class="patient-card">
+                <h3>Maria Zaheer</h3>
+                <p>Mood: Happy</p>
+                <p>CBT: 90% done</p>
+                <button>View Detailed Report</button>
+            </div>
+            <div class="patient-card">
+                <h3>Amna Asif</h3>
+                <p>Mood: Happy</p>
+                <p>CBT: 78% done</p>
+                <button>View Detailed Report</button>
+            </div>
+            <div class="patient-card">
+                <h3>Ayesha Imran</h3>
+                <p>Mood: Happy</p>
+                <p>CBT: 86% done</p>
+                <button>View Detailed Report</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
