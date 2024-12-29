@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracking</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 320px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Progress Section */
+    .progress-container {
+      margin: 20px 0;
+    }
+
+    .progress-image {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .progress-text {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    /* Tasks Section */
+    .tasks-section {
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .tasks-section h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .tasks-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tasks-list li {
+      font-size: 14px;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .tasks-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    /* Button Styling */
+    .summary-button {
+      background-color: #5a67d8;
+      color: white;
+      border: none;
+      padding: 15px;
+      width: 90%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .summary-button:hover {
+      background-color: #434190;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <button class="back-button">←</button>
+      <h1>Progress Tracking</h1>
+    </div>
+    
+    <!-- Progress Circle -->
+    <div class="progress-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBiEucmqNI8zn9X8O_G09LYzfe124KdQD8sg&s" alt="Progress Circle" class="progress-image">
+      <p class="progress-text">60% Complete</p>
+    </div>
+    
+    <!-- Completed Tasks -->
+    <div class="tasks-section">
+      <h2>Completed Tasks</h2>
+      <ul class="tasks-list">
+        <li><input type="checkbox" checked> Task 1: Research</li>
+        <li><input type="checkbox" checked> Task 2: Design Prototype</li>
+        <li><input type="checkbox" checked> Task 3: User Testing</li>
+        <li><input type="checkbox" checked> Task 4: Feedback Review</li>
+        <li><input type="checkbox" checked> Task 5: Final Adjustments</li>
+      </ul>
+    </div>
+
+    <!-- Button -->
+    <button class="summary-button">View Progress Summary</button>
+  </div>
+</body>
+</html>

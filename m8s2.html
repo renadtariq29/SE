@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodSync - Mood Input</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Main Section */
+        main {
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Mood Icons */
+        .mood-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .mood-icons span {
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .mood-icons span:hover {
+            transform: scale(1.2);
+        }
+
+        .mood-icons .selected {
+            transform: scale(1.2);
+            border-bottom: 2px solid #4a4aff;
+        }
+
+        /* Comments Section */
+        .comments {
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .comments textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            resize: none;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            margin: 20px auto;
+            padding: 12px 20px;
+            width: 80%;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            background-color: #4a4aff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #3737d8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .comments textarea {
+                font-size: 12px;
+            }
+
+            .submit-btn {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MoodSync - Mood Input</h1>
+    </header>
+
+    <main>
+        <h2>How are you feeling?</h2>
+        <div class="mood-icons">
+            <span>😊</span>
+            <span>😐</span>
+            <span>😢</span>
+            <span>😡</span>
+        </div>
+
+        <div class="comments">
+            <textarea rows="4" placeholder="✍️ Additional comments"></textarea>
+        </div>
+
+        <button class="submit-btn">✅ Submit Mood</button>
+    </main>
+</body>
+</html>

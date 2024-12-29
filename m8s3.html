@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Shift - CBT Session</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Progress Indicator */
+        .progress {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .progress span {
+            font-size: 14px;
+        }
+
+        .progress .spinner {
+            font-size: 16px;
+        }
+
+        /* Exit Button */
+        .exit-btn {
+            margin: 10px auto;
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #ddd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .exit-btn:hover {
+            background-color: #ccc;
+        }
+
+        /* Step Section */
+        .step {
+            margin: 30px auto;
+        }
+
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            width: 60%;
+            margin: 10px auto;
+            height: 8px;
+            background: #e6e6ff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar .progress-fill {
+            width: 33%;
+            height: 100%;
+            background: #4a4aff;
+        }
+
+        /* Next Step Button */
+        .next-btn {
+            margin: 30px auto;
+            padding: 12px 20px;
+            width: 80%;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            background-color: #4a4aff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .next-btn:hover {
+            background-color: #3737d8;
+        }
+
+        /* Bottom Exit Button */
+        .bottom-exit-btn {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 80%;
+        }
+
+        .bottom-exit-btn:hover {
+            background-color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .progress {
+                padding: 0 10px;
+            }
+
+            .step h3 {
+                font-size: 18px;
+            }
+
+            .next-btn, .bottom-exit-btn {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cognitive Shift - CBT Session</h1>
+    </header>
+
+    <main>
+        <!-- Progress Section -->
+        <div class="progress">
+            <span>Step 1 of 3</span>
+            <span class="spinner">🔄</span>
+            <button class="exit-btn">✖ Exit</button>
+        </div>
+
+        <!-- Step Details -->
+        <div class="step">
+            <h3>Step 1 of 3</h3>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p>Follow the instructions to complete this step.</p>
+        </div>
+
+        <!-- Next Step Button -->
+        <button class="next-btn">→ Next Step</button>
+
+        <!-- Bottom Exit Button -->
+        <button class="bottom-exit-btn">Next Step</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Dashboard</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Main Section */
+        main {
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .mood-btn, .session-btn {
+            display: block;
+            margin: 10px auto;
+            padding: 12px 20px;
+            width: 80%;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mood-btn {
+            background-color: #e6e6ff;
+            color: #4a4aff;
+        }
+
+        .session-btn {
+            background-color: #4a4aff;
+            color: #fff;
+        }
+
+        /* Footer Section */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        footer nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        footer nav ul li {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        footer nav ul li:hover {
+            color: #4a4aff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .mood-btn, .session-btn {
+                width: 90%;
+            }
+
+            footer nav ul li {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CBT Solutions - Dashboard</h1>
+    </header>
+
+    <main>
+        <h2>Hello Renad</h2>
+        <button class="mood-btn">🧠 How are you feeling?</button>
+        <button class="session-btn">🚀 Start CBT Session</button>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>🏠 Home</li>
+                <li>📊 Mood Tracker</li>
+                <li>📅 Sessions</li>
+                <li>👤 Profile</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
